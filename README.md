@@ -16,4 +16,4 @@
 
 ## Structure of neural network:
 #### 3 fully connected layers:
-##### First layer has input size of 784(=28*28) to read the flattened form of picture and outputs 128 data points to next layer after passing through activation function(ReLu). The second layer inputs the 128 data points and passes 64 to next after passing through the activation function(ReLu). Final layer takes 64 data points and returns a digit.
+##### First layer has input size of 784(=28*28) to read the flattened form of picture and outputs 128 data points to next layer after passing through activation function(ReLu). The second layer inputs the 128 data points and passes 64 to next after passing through the activation function(ReLu). Final layer takes 64 data points and returns a digit(0 to 9).
