@@ -5,7 +5,7 @@ from enum import Enum
 from collections import namedtuple
 
 pygame.init()
-font = pygame.font.Font('Week 3-4\resources\Bahnschrift.ttf',36)
+font = pygame.font.SysFont('Bahnschrift',36)
 
 class Direction(Enum):
     RIGHT = 1
