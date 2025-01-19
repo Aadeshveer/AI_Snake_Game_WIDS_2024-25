@@ -26,3 +26,5 @@
 ##### Max states to store for long term training = 100000                                      line 9
 ##### Discount rate(gamma)                       = 0.9                                         line 18
 ##### Exploration ratio                          = (80 - number of games played) in 200 moves  line 26 and 28
+
+### This project was made as a submission to Winter in Data Science at IIT Bombay under the mentorship of Saksham Saharia and Prabhav Khandelwal. The project is a derivative of same made by Patrick Loeber availible at https://github.com/patrickloeber/snake-ai-pytorch.
