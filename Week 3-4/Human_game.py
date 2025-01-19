@@ -5,7 +5,7 @@ from enum import Enum
 from collections import namedtuple
 
 pygame.init()
-font = pygame.font.Font('resources\Bahnschrift.ttf',36)
+font = pygame.font.Font('Week 3-4\resources\Bahnschrift.ttf',36)
 
 class Direction(Enum):
     RIGHT = 1
@@ -42,16 +42,16 @@ class SnakeGame:
                       Point(self.head.x-(2*BLOCK_SIZE), self.head.y)]
         
         # graphics
-        pygame.display.set_icon(pygame.image.load('resources/icon.png'))
-        self.head_down = pygame.transform.scale(pygame.image.load('resources/head.png'),(BLOCK_SIZE*1.8,BLOCK_SIZE*1.8))
+        pygame.display.set_icon(pygame.image.load('Week 3-4/resources/icon.png'))
+        self.head_down = pygame.transform.scale(pygame.image.load('Week 3-4/resources/head.png'),(BLOCK_SIZE*1.8,BLOCK_SIZE*1.8))
         self.head_right = pygame.transform.rotate(self.head_down,90)
         self.head_up = pygame.transform.rotate(self.head_down,180)
         self.head_left = pygame.transform.rotate(self.head_down,-90)
-        self.block = pygame.transform.scale(pygame.image.load('resources/block.png'),(BLOCK_SIZE,BLOCK_SIZE))
-        self.apple = pygame.transform.scale(pygame.image.load('resources/apple.png'),(BLOCK_SIZE,BLOCK_SIZE))
+        self.block = pygame.transform.scale(pygame.image.load('Week 3-4/resources/block.png'),(BLOCK_SIZE,BLOCK_SIZE))
+        self.apple = pygame.transform.scale(pygame.image.load('Week 3-4/resources/apple.png'),(BLOCK_SIZE,BLOCK_SIZE))
         # audios
-        mixer.music.load('resources/music.mp3')
-        self.eat_sound = mixer.Sound('resources/eat.mp3')
+        mixer.music.load('Week 3-4/resources/music.mp3')
+        self.eat_sound = mixer.Sound('Week 3-4/resources/eat.mp3')
         mixer.music.play(-1)
 
         self.score = 0
