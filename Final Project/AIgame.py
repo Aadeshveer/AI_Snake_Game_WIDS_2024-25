@@ -6,7 +6,7 @@ from collections import namedtuple
 import numpy as np
 
 pygame.init()
-font = pygame.font.Font('resources\Bahnschrift.ttf',36)
+font = pygame.font.Font('Final Project\resources\Bahnschrift.ttf',36)
 
 class Direction(Enum):
     RIGHT = 1
@@ -32,16 +32,16 @@ class SnakeGameAI:
         self.display = pygame.display.set_mode((self.w,self.h))
         pygame.display.set_caption('Snake')
         # graphics
-        pygame.display.set_icon(pygame.image.load('resources/icon.png'))
-        self.head_down = pygame.transform.scale(pygame.image.load('resources/head.png'),(BLOCK_SIZE*1.8,BLOCK_SIZE*1.8))
+        pygame.display.set_icon(pygame.image.load('Final Project\resources/icon.png'))
+        self.head_down = pygame.transform.scale(pygame.image.load('Final Project\resources/head.png'),(BLOCK_SIZE*1.8,BLOCK_SIZE*1.8))
         self.head_right = pygame.transform.rotate(self.head_down,90)
         self.head_up = pygame.transform.rotate(self.head_down,180)
         self.head_left = pygame.transform.rotate(self.head_down,-90)
-        self.block = pygame.transform.scale(pygame.image.load('resources/block.png'),(BLOCK_SIZE,BLOCK_SIZE))
-        self.apple = pygame.transform.scale(pygame.image.load('resources/apple.png'),(BLOCK_SIZE,BLOCK_SIZE))
+        self.block = pygame.transform.scale(pygame.image.load('Final Project\resources/block.png'),(BLOCK_SIZE,BLOCK_SIZE))
+        self.apple = pygame.transform.scale(pygame.image.load('Final Project\resources/apple.png'),(BLOCK_SIZE,BLOCK_SIZE))
         # audios
-        mixer.music.load('resources/music.mp3')
-        self.eat_sound = mixer.Sound('resources/eat.mp3')
+        mixer.music.load('Final Project\resources/music.mp3')
+        self.eat_sound = mixer.Sound('Final Project\resources/eat.mp3')
         mixer.music.play(-1)
         
         self.clock = pygame.time.Clock()
